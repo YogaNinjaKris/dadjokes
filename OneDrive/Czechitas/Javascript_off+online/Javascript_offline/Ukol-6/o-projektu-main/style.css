@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.hlavicka {
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
+}
+
+.menu {
+  display: flex;
+  flex-basis: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.michaela {
+  display: flex;
+  flex-basis: 600px;
+}
+.michaela img {
+  width: 200px;
+  border-radius: 20px;
+}
+
+.michaela p {
+  margin: 30px;
+  width: 400px;
+}
