@@ -1,17 +1,15 @@
 import React from 'react';
 import { render } from 'react-dom';
+import { Joke } from './Joke/joke.jsx';
 import './index.html';
 import './style.css';
 
-render(
-  <>
-    <header>
-      <h1>Dadjokes test funguju</h1>
-    </header>
-    <main>
-      <p>React stránka</p>
-    </main>
-    <footer>Kristýna</footer>
-  </>,
-  document.querySelector('#app'),
-);
+const App = () => {
+  return (
+    <div className="container">
+      <Joke />
+    </div>
+  );
+};
+
+render(<App />, document.querySelector('#app'));
