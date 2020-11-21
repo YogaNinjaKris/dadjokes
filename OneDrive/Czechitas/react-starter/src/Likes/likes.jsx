@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './likes.css';
 
-export const Likes = () => {
-  const [upLike, setUpLike] = useState(0);
-  const [downLike, setDownLike] = useState(0);
+export const Likes = (props) => {
+  const [upLike, setUpLike] = useState(props.likes);
+  const [downLike, setDownLike] = useState(props.dislikes);
 
   return (
     <div className="joke__likes">
